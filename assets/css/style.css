@@ -10,11 +10,11 @@
 header {
   display: flex;
   justify-content: center;
-  position: fixed;
+  position: absolute;
+  height: 100px;
   top: 0;
   left: 0;
   right: 0;
-  background-image: linear-gradient(to right, #D7D7D7 50%, #000 50%);
 }
 
 header .container {
@@ -227,3 +227,20 @@ section .rightside {
   width: 380px;
 }
 
+/* Button To Top */
+
+.scroll-to {
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.arrow-top-icon {
+  font-size: 40px;
+}
