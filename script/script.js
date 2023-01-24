@@ -11,13 +11,13 @@ function toTop() {
     document.querySelector('.scroll-to').style.display = 'none';
   } else {
     document.querySelector('.scroll-to').style.display = 'block';
+    if(window.screenY >= 670) {
+      document.querySelector('.scroll-to').style.color = 'white'
+    }
   }
 }
 
 window.addEventListener('scroll', toTop);
-
-
-
 //
 
 let list = document.querySelectorAll('ul li a');
@@ -28,3 +28,9 @@ function activeLink(){
 } 
 list.forEach((item) => 
 item.addEventListener('mouseover', activeLink));
+
+new TypeIt(".typeIt", {
+  strings: "Juan Holy",
+  speed: 300,
+  delay: 900,
+}).go()

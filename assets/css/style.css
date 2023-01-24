@@ -42,14 +42,20 @@ header nav ul a {
   color: #D7D7D7;
   font-weight: bold;
   font-size: 15px;
-  padding: 10px 20px;
+  padding: 10px 15px;
   margin-left: 20px;
+  transition: all 0.2s ease-in;
+  border-radius: 30px;
 }
 
 header nav ul a:hover {
   color: #000;
   background-color: #D7D7D7;
-  border-radius: 30px;
+
+}
+
+header nav ul a[href="#contacts"]{
+  border: 2px solid #D7D7D7;
 }
 
 header nav ul .selected {
@@ -69,7 +75,6 @@ header nav ul .selected:hover {
 section .container {
   display: flex;
   width: auto;
-  height: 100vh;
 }
 
 /*Left Side*/
@@ -77,7 +82,7 @@ section .container {
 div .leftside {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   flex: 1;
   align-items: center;
   background-color: #D7D7D7;
@@ -133,7 +138,6 @@ div .leftside .info .social div img{
 }
 
 section .leftside .about{ 
-  height: 300px;
   background-color: #000;
   width: 100%;
   border-top-right-radius: 120px;
@@ -173,6 +177,7 @@ section .rightside {
   align-items: center;
   flex-direction: column;
   background: radial-gradient(circle, #FFF , #D7D7D7, #D7D7D7);
+  padding: 5em;
 }
 
 #about_me .title_about_me {
@@ -236,11 +241,84 @@ section .rightside {
   bottom: 20px;
   border: none;
   padding: 10px;
-  background-color: transparent;
-  border-radius: 20px;
+  background-color: #000;
+  color: white;
+  border-radius: 50%;
   cursor: pointer;
 }
 
 .arrow-top-icon {
   font-size: 40px;
 }
+
+section.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+
+.container-skills {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.skills-title {
+  font-size: 30px;
+  letter-spacing: 10px;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  border: 4px solid #FFF;
+  padding: 10px 10px 10px 15px;
+  margin-top: 35px;
+  border-radius: 30px;
+}
+
+.portifolio {
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(circle, #FFF , #D7D7D7, #D7D7D7);
+}
+
+.container-portifolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 998px;
+  padding: 30px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  background-color: #222;
+  border-radius: 20px;
+  width: 300px;
+  height: 400px;
+}
+
+.project-title {
+  text-transform: uppercase;
+  color: #FFF;
+  margin: 20px 5px; 
+}
+
+.projects img {
+  width: 265px;
+}
+
+.projects .project-desc {
+  margin-top: 20px;
+  color: white;
+  word-wrap: break-word;
+  padding: 20px;
+}
+
+
+
